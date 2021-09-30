@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.9) !important;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li .head {
+  color: #fff !important;
+  background: #001f3f;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 16px;
+  color: #001f3f;
+  width: 80px;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+nav li a:hover {
+  background: #001f3f;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#vid {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background: #001f3f;
+  color: #fff;
+}
+
+#preview {
+  text-align: center;
+  padding: 80px;
+  position: relative;
+  top: 0;
+  width: 88%;
+  margin: 0;
+  left: 0;
+  height: 100%;
+  margin-left: 0;
+}
+
+#preview h1 {
+  font-size: 48px;
+}
+
+#preview p {
+  font-size: 32px;
+}
+
+#preview h1, #preview p {
+  color: #fff;
+  background: #001f3f;
+  padding: 6px;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 3px;
+  display: inline;
+  white-space: pre;
+}
+
+.content {
+  width: 82.5%;
+  margin: 48px auto;
+  margin-top: 250px;
+  padding: 32px 0;
+}
+
+.btn {
+  margin: 2px;
+  background: #fff !important;
+  border: 3px #001f3f solid;
+  color: #001f3f !important;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 24px !important;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: red solid 2px;
+  opacity: 0.9;
+}
+
+.content a {
+  text-decoration: none;
+  color: #fff;
+  background: #001f3f;
+  padding: 2px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.content a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+hr {
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #001f3f;
+}
+
+::selection {
+  color: #fff;
+  background: #001f3f;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.no-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.popup-button {
+  display: block;
+  margin: 20% auto 0;
+  padding: 10px 50px;
+  flex-basis: 50%;
+  background: #001f3f;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: 5px solid #001f3f;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.popup-button:hover,
+.popup-button:focus {
+  background: #003f5f;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
+  z-index: 37001;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+}
+
+.popup__overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 37000;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.popup__close {
+  position: absolute;
+  right: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  color: #001f3f;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.popup__button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup__cancel,
+.popup__accept {
+  padding: 8px 15px;
+  margin: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.popup__cancel {
+  color: #001f3f;
+  margin-left: 10px;
+  border: 3px solid #001f3f;
+}
+
+.popup__cancel:hover,
+.popup__cancel:focus {
+  color: #fff;
+  background: #001f3f;
+}
+
+.popup__accept {
+  border: 3px solid rgb(16, 75, 38);
+  background: rgb(16, 75, 38);
+  color: #fff;
+}
+
+.popup__accept:hover,
+.popup__accept:focus {
+  background: rgb(25, 119, 60);
+}
