@@ -1,8 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
-  margin: 0;
+html, body {
   padding: 0;
+  margin: 0;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
   background: #fff;
 }
@@ -35,7 +38,7 @@ nav li .head {
 nav li a {
   display: block;
   text-decoration: none;
-  padding: 16px;
+  padding: 1em;
   color: #001f3f;
   width: 80px;
   text-align: center;
@@ -56,13 +59,6 @@ nav li a:hover {
   transition: all 0.2s linear;
 }
 
-#vid {
-  position: absolute;
-  overflow: hidden;
-  left: 0;
-  top: 0;
-}
-
 footer {
   text-align: center;
   height: 50px;
@@ -76,7 +72,7 @@ footer {
 
 #preview {
   text-align: center;
-  padding: 80px;
+  padding: 5em;
   position: relative;
   top: 0;
   width: 88%;
@@ -87,11 +83,11 @@ footer {
 }
 
 #preview h1 {
-  font-size: 48px;
+  font-size: 3em;
 }
 
 #preview p {
-  font-size: 32px;
+  font-size: 2em;
 }
 
 #preview h1, #preview p {
@@ -106,27 +102,20 @@ footer {
 }
 
 .content {
-  width: 82.5%;
-  margin: 48px auto;
-  margin-top: 250px;
-  padding: 32px 0;
+  padding: 2em;
 }
 
 .btn {
-  margin: 2px;
   background: #fff !important;
   border: 3px #001f3f solid;
   color: #001f3f !important;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 5px 24px !important;
-  cursor: pointer;
+  padding: 0.3em 1.5em !important;
 }
 
-.btn:hover,
-.btn:focus {
-  outline: red solid 2px;
+.btn:hover {
   opacity: 0.9;
 }
 
@@ -167,6 +156,22 @@ hr {
 ::selection {
   color: #fff;
   background: #001f3f;
+}
+
+header {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-background {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .hidden {

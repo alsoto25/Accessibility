@@ -34,12 +34,14 @@
 
       <p>Here is a description about my website!</p>
 
-      <button type="button" class="popup-button js-popup-open">Popup</button>
+      <!-- Problem 1: An anchor being used for functionality -->
+      <a href="#" class="popup-button js-popup-open">Popup</a>
     </div>
   </header>
 
   <div class="content">
-    <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipisicing
+    <!-- Problem 2: Button being used for navigation -->
+    <p><button type="button" class="link" onclick="window.location.href = 'http://www.google.com'">Lorem ipsum</button> dolor sit amet, consectetur adipisicing
       elit, sed do eiusmod tempor incididunt ut labore et dolore magna
       aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea <a href="#">commodo consequat</a>.
@@ -75,11 +77,11 @@
     </p>
   </div>
 
-  <div class="popup__overlay js-popup hidden"></div>
-  <div class="popup js-popup hidden">
+  <div class="popup__overlay js-popup-overlay hidden"></div>
+  <div aria-labelledby="popup-title" aria-describedby="popup-description" class="popup js-popup hidden" role="dialog">
     <button type="button" class="popup__close js-popup-close">X</button>
-    <h3 class="popup__title">Popup Title!</h3>
-    <p class="popup__description">
+    <h3 class="popup__title" id="popup-title">Popup Title!</h3>
+    <p class="popup__description" id="popup-description">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptatem assumenda recusandae alias neque voluptate ipsam explicabo voluptatibus, ipsum quasi, qui quis numquam eveniet nesciunt velit. Consectetur rem impedit labore!
     </p>
     <div class="popup__button-container">

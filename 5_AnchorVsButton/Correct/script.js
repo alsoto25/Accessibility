@@ -14,11 +14,8 @@ window.addEventListener('load', () => {
     popup.classList.remove('hidden');
     popupOverlay.classList.remove('hidden');
 
-    // Solution 1: Focus is switched to the first focusable element of the popup
-    firstFocusableEl.focus();
-
-    // Solution 2: Activate Focus Trap on the Popup
     addTrapFocus(popup);
+    firstFocusableEl.focus();
   }));
 
   closeBtn.map(btn => btn.addEventListener('click', () => {
@@ -27,7 +24,6 @@ window.addEventListener('load', () => {
     popup.classList.add('hidden');
     popupOverlay.classList.add('hidden');
 
-    // Solution 3: Focus trap is removed and focus is switched back to opening button
     removeTrapFocus(popup);
     openBtn[0].focus();
   }));
