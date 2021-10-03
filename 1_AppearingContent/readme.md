@@ -14,11 +14,11 @@ Another change that would further improve the experience is moving the buttons a
 
 ## More info on `aria-live`
 
-This attribute was created to fill the gap that dynamic changes on a website creates to visually impaired users, as this content is obvious for user who can see the page, but there's no other queue for those who rely on screen readers. `Aria-live` works great when working with dynamic content, a carousel being an example of this, but another great use case for this attribute is when working with searches/filters.
+This attribute was created to fill the gap that dynamic changes on a website creates to visually impaired users, as this content is obvious for user who can see the page, but there's no other queue for those who rely on screen readers. `aria-live` works great when working with dynamic content, a carousel being an example of this, but another great use case for this attribute is when working with searches/filters.
 
 There's 3 different "politeness" settings we can have for `aria-live`:
-1. **off (default)**: Any content changed on elements with this setting won't be notified to the user
+1. **off (default)**: Any content changed on elements with this setting won't be notified to the user.
 2. **polite**: This setting will notify the user about any changes done to the region in a "polite" manner, meaning it will read out changes to the user as long as the user is idle and not interacting with other elements of the page.
-3. **assertive**: On this setting, any changes made inside the element will be read out to the user with top priority, meaning that regardless if the user is interacting with the page or not.
+3. **assertive**: On this setting, any changes made inside the element will be read out to the user with top priority, meaning that regardless if the user is interacting with the page or not, the changes will be read out, overriding any other interaction the user might be having.
 
 You can read more about the `aria-live` [here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions).
