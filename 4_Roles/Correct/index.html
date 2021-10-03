@@ -26,8 +26,8 @@
     </ul>
   </nav>
 
-  <!-- Solution 1: A clickable element should have the role="button" attribute -->
-  <header class="js-header" role="button">
+  <!-- Solution 1: A clickable element should have the role="button" attribute, as well as a tabindex="0" -->
+  <header class="js-header" role="button" tabindex="0">
     <img class="header-background" src="hero-bg.jpg" alt="">
 
     <div id="preview">
@@ -40,8 +40,8 @@
   <main id="main-content" class="content">
     <div class="tooltip-parent">
       <p>
-        <!-- Solution 2: Tooltip "parent" should have a aria-labelledby attribute -->
-        <a id="tooltip-1-parent" href="#" aria-labelledby="tooltip-1">Lorem ipsum</a>
+        <!-- Solution 2: Tooltip "parent" should have a aria-describedby attribute -->
+        <a id="tooltip-1-parent" href="#" aria-describedby="tooltip-1">Lorem ipsum</a>
         dolor sit amet, consectetur adipisicing
         elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -51,8 +51,8 @@
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
         id est laborum.
       </p>
-      <!-- Solution 3: Tooltips should have the role="tooltip" -->
-      <div id="tooltip-1" role="tooltip" class="tooltip hidden">This link will take you<br>outside our website</div>
+      <!-- Solution 3: Tooltips should have role="tooltip" and aria-hidden="true" -->
+      <div id="tooltip-1" role="tooltip" class="tooltip hidden" aria-hidden="true">This link will take you<br>outside our website</div>
     </div>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing
