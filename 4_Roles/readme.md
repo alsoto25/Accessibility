@@ -23,7 +23,7 @@ ARIA has a lot of roles available and new ones are constantly created and gave s
 While the button role itself is pretty straight forward, there's a few other attributes that can be used in conjunction with this one for certain situations:
 
 1. **Toggle**: When working with a toggle button, aria has another attribute (`aria-pressed`) which can be used to inform the user whether the toggle is *on* or *off*.
-1. **Accordion**: Accordions are pretty common on websites nowdays and while they technically function as toggles, WAI-ARIA has provided a great way to identify them as accordions specifically. The attribute `aria-expanded` can tell the user whether the content this button controles is currently shown or not.
+1. **Accordion**: Accordions are pretty common on websites nowdays and while they technically function as toggles, WAI-ARIA has provided a great way to identify them as accordions specifically. The attribute `aria-expanded` can tell the user whether the content this button controls is currently shown or not.
 
 Another important topic to keep in mind is when to use `<button>` vs `<a>` which will be covered in the next case. More best practices and info regarding the button role and even the `<button>` tag can be found on [this page](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role).
 
