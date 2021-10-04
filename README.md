@@ -1,4 +1,4 @@
-# Common Accessibility Mistakes - 1
+# Common Accessibility Mistakes
 
 ## Introduction
 Working with accessibility is something that we should work on as web developers, however there's still a lot of confusion and easily avoidable mistakes we've all probably done at least once.
