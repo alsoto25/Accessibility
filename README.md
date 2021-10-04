@@ -5,7 +5,7 @@ Working with accessibility is something that we should work on as web developers
 
 Here I've identified some of the most common ones I've seen or made myself when working with accessibility. I know there's A LOT more so I might keep updating this repo and even re-structure the directory to keep it organized., but I'll be releasing them in batches as these go in hand-in-hand with a presentation. That being said, all the needed information and explanation is here.
 
-Every case has it's own `readme.md` explaining what the common mistake is, why it''s bad and how to fix it, along with the sample code. There's also a sample website template which is what I use to base every example.
+Every case has it's own `readme.md` explaining what the common mistake is, why it's bad and how to fix it, along with the sample code. There's also a sample website template which is what I use to base every example.
 
 ## Mistakes
 
