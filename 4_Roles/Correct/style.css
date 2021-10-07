@@ -3,6 +3,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  min-height: 100vh;
 }
 
 body {
@@ -80,6 +81,7 @@ footer {
   left: 0;
   height: 100%;
   margin-left: 0;
+  z-index: 10;;
 }
 
 #preview h1 {
@@ -162,6 +164,8 @@ header {
   height: 600px;
   overflow: hidden;
   position: relative;
+  padding-top: 65px;
+  cursor: pointer;
 }
 
 .header-background {
@@ -172,4 +176,41 @@ header {
   min-height: 100%;
   width: 100%;
   height: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.tooltip-parent {
+  position: relative;
+}
+
+#tooltip-1 {
+  left: 51px;
+  top: 0;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 100;
+  font-size: 12px;
+  color: #fff;
+  background: #001f3f;
+  padding: 5px;
+  line-height: 1;
+  text-align: center;
+  transform: translate(-50%, -150%);
+  border: 0;
+}
+
+.tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 99%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #001f3f transparent transparent transparent;
 }

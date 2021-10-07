@@ -13,7 +13,7 @@ There's 4 big problems that a modal without focus management has:
 ## Solution
 
 After knowing the problems, the solutions are pretty straight forward:
-1. Add the `aria-haspoup="true"` attribute to the button, so user can expect a popup to be opened and focus to be switched.
+1. Add the `aria-haspoup="dialog"` attribute to the button, so user can expect a dialog to be opened and focus to be switched.
 1. Switch the focus to the popup when it's opened.
 1. Trap the focus inside the popup so users aren't allowed to switch focus to an element outside the modal.
 1. As soon as the popup is closed, switch the focus to the element that had the focus before opening the modal, so the user can continue navigating through the content.

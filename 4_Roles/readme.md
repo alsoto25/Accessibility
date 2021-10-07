@@ -10,7 +10,10 @@ Roles are a great way to help screen reader users give the correct context on wh
 
 ## Solution
 
-1. If adding the entire section on a `<button>` is not feasible or feels too clunky, then the next best approach is adding a `role="button"` which makes the screen reader interpret it as a button regardless of the type of element it is. Also adding a `tabindex="0"` to the element will make it so it's "tab-able", as it's an interactive element.
+1. If adding the entire section on a `<button>` is not feasible or feels too clunky, then the next best approach is adding a `role="button"` which makes the screen reader interpret it as a button regardless of the type of element it is. Also adding a `tabindex="0"` to the element will make it so it's "tab-able", as it's an interactive element. An optional improvement that can be done to this type of elements is adding a custom `aria-label`,
+    that explains what the button does, otherwise a screen reader will just read out the entire content of the button,
+    however we must remember that screen reader users are not able to navigate inside a button, so doing this will make the user miss the entire content
+    inside it.
 
 1. While having a tooltip with the `role="alert"` is not entirely wrong, it implies that the user is expected to navigate into the tooltip. Instead, WAI-ARIA has a specialized role for tooltip (`role="tooltip"`) which should be used, accompanied by `aria-hidden="true"` and `aria-describedby` on the parent. This way, the tooltip will automatically be read to the user when he navigates to the element that has it.
 

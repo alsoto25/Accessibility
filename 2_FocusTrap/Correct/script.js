@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
   const closeBtn = Array.from(document.getElementsByClassName('js-popup-close'));
 
   openBtn.map(btn => btn.addEventListener('click', e => {
-    const firstFocusableEl = e.currentTarget.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])')[0];
+    const firstFocusableEl = popup.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])')[0];
 
     html.classList.add('no-scroll');
     body.classList.add('no-scroll');
@@ -19,6 +19,9 @@ window.addEventListener('load', () => {
 
     // Solution 2: Activate Focus Trap on the Popup
     addTrapFocus(popup);
+
+    // Solution 3: Add 'aria-modal="true"' to the popup so screen reader doesn't leave users off modal
+    popup.setAttribute('aria-modal', 'true');
   }));
 
   closeBtn.map(btn => btn.addEventListener('click', () => {
@@ -27,9 +30,13 @@ window.addEventListener('load', () => {
     popup.classList.add('hidden');
     popupOverlay.classList.add('hidden');
 
-    // Solution 3: Focus trap is removed and focus is switched back to opening button
+    // Solution 4: Add 'aria-modal="true"' to the popup so screen reader doesn't leave users off modal
+    popup.setAttribute('aria-modal', 'false');
+
+    // Solution 5: Focus trap is removed and focus is switched back to opening button
     removeTrapFocus(popup);
     openBtn[0].focus();
+
   }));
 });
 
