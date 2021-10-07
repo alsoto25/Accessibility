@@ -4,13 +4,13 @@ For this case, we have a section where content can be switched by a couple of bu
 
 ## Problem
 
-https://youtube.com/embed/TTKaXVe6p40
+[![Accessibility - No aria-live on dynamic content (Wrong)](http://img.youtube.com/vi/TTKaXVe6p40/0.jpg)](http://www.youtube.com/watch?v=TTKaXVe6p40 "Accessibility - No aria-live on dynamic content (Wrong)")
 
 The issue with this approach is that a screen reader user might not be informed of what content is changing and where. This case is even worse because the buttons are located under the changing content, which means that the user won't see the content changed on the normal navigation flow of the website, meaning that if a user presses the button and goes to the next content on the page, they'll be on a completely different section not related to the buttons just pressed, which can be confusing.
 
 ## Solution
 
-https://youtube.com/embed/X5aNM5ByCWE
+[![Accessibility - No aria-live on dynamic content (Correct)](http://img.youtube.com/vi/X5aNM5ByCWE/0.jpg)](http://www.youtube.com/watch?v=X5aNM5ByCWE "Accessibility - No aria-live on dynamic content (Correct)")
 
 There's a few solutions that can help with making this more accessible. The main one is adding an `aria-live` property to the container of the slides, this will make it so when displayed content changes, the screen reader will read the content out loud for the user.
 
