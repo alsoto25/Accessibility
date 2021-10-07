@@ -8,6 +8,10 @@ Roles are a great way to help screen reader users give the correct context on wh
 
 1. A lot of websites implement tooltips nowdays, it's a great way to convey information that might not be obvious to the user without cluttering the site with content that might not be relevant unless the user is actively interacting with certain elements. However, using the correct role will not only change how the screen reader reads the element, but the urgency or politeness of the element.
 
+### Video Demonstration
+
+[![Accessibility - Correct use of `role` attribute (Wrong)](http://img.youtube.com/vi/x8nDdJw81RI/0.jpg)](http://www.youtube.com/watch?v=x8nDdJw81RI "Accessibility - Correct use of `role` attribute (Wrong)")
+
 ## Solution
 
 1. If adding the entire section on a `<button>` is not feasible or feels too clunky, then the next best approach is adding a `role="button"` which makes the screen reader interpret it as a button regardless of the type of element it is. Also adding a `tabindex="0"` to the element will make it so it's "tab-able", as it's an interactive element. An optional improvement that can be done to this type of elements is adding a custom `aria-label`,
@@ -16,6 +20,10 @@ Roles are a great way to help screen reader users give the correct context on wh
     inside it.
 
 1. While having a tooltip with the `role="alert"` is not entirely wrong, it implies that the user is expected to navigate into the tooltip. Instead, WAI-ARIA has a specialized role for tooltip (`role="tooltip"`) which should be used, accompanied by `aria-hidden="true"` and `aria-describedby` on the parent. This way, the tooltip will automatically be read to the user when he navigates to the element that has it.
+
+### Video Demonstration
+
+[![Accessibility - Correct use of `role` attribute (Correct)](http://img.youtube.com/vi/O5PKbspP99M/0.jpg)](http://www.youtube.com/watch?v=O5PKbspP99M "Accessibility - Correct use of `role` attribute (Correct)")
 
 ## More information
 

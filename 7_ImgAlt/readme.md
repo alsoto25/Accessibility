@@ -11,9 +11,17 @@ On this case we focused on decorative images, as these are the most common image
 1. No `alt` attribute on an image will cause the screen reader to read the name of the image, which 99% of the times won't make any sense to the user.
 1. Having an over-explained `alt` description on a decorative image is not inaccessible per-se, but it creates unnecessary information for the user, as it makes no difference to the experience.
 
+### Video Demonstration
+
+[![Accessibility - Correct use of the `alt` attribute (Wrong)](http://img.youtube.com/vi/gqAz2SaesME/0.jpg)](http://www.youtube.com/watch?v=gqAz2SaesME "Accessibility - Correct use of the `alt` attribute (Wrong)")
+
 ## Solution
 
 For decorative images, it's important that we set the `alt` attribute to empty (`alt=""`), as this makes it so the screen reader knows the image is completely eye candy and not relevant for a visually impaired user.
+
+### Video Demonstration
+
+[![Accessibility - Correct use of the `alt` attribute (Correct)](http://img.youtube.com/vi/C3qyp9zr1Kw/0.jpg)](http://www.youtube.com/watch?v=C3qyp9zr1Kw "Accessibility - Correct use of the `alt` attribute (Correct)")
 
 ## More information
 
