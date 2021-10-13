@@ -1,4 +1,4 @@
-# Correct use of the `alt` attribute
+# Incorrect use of the `alt` attribute
 
 Images are really tricky to work with when it comes to accessibility, as most of the times we'd like to use images of all types on our websites. It makes them more appealing, helps communicate information better and overall just improves the experience on the site, at least most of the times.
 
