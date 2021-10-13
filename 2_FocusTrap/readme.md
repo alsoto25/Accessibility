@@ -1,4 +1,4 @@
-# Focus management on Popups/Modals
+# No Focus management on Popups/Modals
 
 Focus management is one of the easiest things to forget when developing popups/modals. That being said, focus management is one of the most important accessibility improvements for a site.
 
