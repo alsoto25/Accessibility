@@ -10,11 +10,13 @@ Every case has it's own `readme.md` explaining what the common mistake is, why i
 ## Mistakes
 
 1. No `aria-live` on dynamic content
-1. Focus management on Popups/Modals
+1. No Focus management on Popups/Modals
 1. Having an image as a button
-1. Correct use of `role` attribute
+1. Incorrect use of `role` attribute
 1. Using `<button>` vs using `<a>`
+
+
 ## Bonus extra simple ones
 
 1. Typing out UPPERCASE copy
-1. Correct use of the `alt` attribute
+1. Incorrect use of the `alt` attribute
