@@ -20,3 +20,14 @@ Every case has it's own `readme.md` explaining what the common mistake is, why i
 
 1. Typing out UPPERCASE copy
 1. Incorrect use of the `alt` attribute
+
+***
+
+# Accessibility Auditing Tools
+
+The most trustworthy tools I found when we started working on this project were:
+* [axe DevTools Chrome Extension](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)
+* [WAVE Evaluation Tool Chrome Extension](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
+
+Also, axe recently developed a VS Code extension as well which works a bit like a linter, and while it's somewhat new and I haven't used it for long, so far it looks pretty useful:
+* [axe VS Code Linter](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter)
