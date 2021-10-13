@@ -11,7 +11,7 @@ When you write out HTML or CSS, you wouldn't expect a screen reader to try to re
 [![Accessibility - Typing out UPPERCASE copy (Wrong)](http://img.youtube.com/vi/0hWgpYy5UGQ/0.jpg)](http://www.youtube.com/watch?v=0hWgpYy5UGQ "Accessibility - Typing out UPPERCASE copy (Wrong)")
 ## Solution
 
-While some of the other cases might have multiple ways to circumvent the issue, this one really only has one fix; don't type out in ALL CAPS. If you need a text to be uppercase, do it through CSS with the `text-transform: uppercase` property, either by applying it to the element itself or by creating a utility class and applying it to each element that needs to be uppercase.
+While some of the other cases might have multiple ways to circumvent the issue, this one really only has one fix; don't type out in ALL CAPS. If you need a text to be uppercase though, you should do it through CSS with the `text-transform: uppercase` property, either by applying it to the element itself or by creating a utility class and applying it to each element that needs to be uppercase. However to be completely sure, it's recommended that you add an `aria-label` to the element, as there's some screen readers that read the text in uppercase, even when applied through CSS.
 
 ### Video Demonstration
 
