@@ -1,4 +1,4 @@
-# Correct use of `role` attribute
+# Incorrect use of `role` attribute
 
 Roles are a great way to help screen reader users give the correct context on what type of element is the user on and how should the screen reader react to the element. Here I've presented a couple of use cases that are not that uncommon.
 
